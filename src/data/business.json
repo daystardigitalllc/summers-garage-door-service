@@ -1,0 +1,45 @@
+{
+  "name": "Summers Garage Door Service",
+  "industry": "Garage Door Service",
+  "logo": "",
+  "phone": "615-913-0995",
+  "email": "summersgaragedoorservice@gmail.com",
+  "bookingUrl": "",
+  "mainCta": "Get a Free Estimate",
+  "yearsInBusiness": "10+",
+  "certifications": [
+    "Licensed & Insured",
+    "Free Estimates",
+    "Family Owned & Operated",
+    "24/7 Emergency Service"
+  ],
+  "socials": {
+    "facebook": "https://www.facebook.com/SummersGarageDoorService"
+  },
+  "address": {
+    "street": "",
+    "city": "Camden",
+    "state": "TN",
+    "zip": "38320"
+  },
+  "locations": [
+    "Camden, TN",
+    "Dickson, TN",
+    "Waverly, TN",
+    "Paris, TN",
+    "Clarksville, TN",
+    "Nashville, TN",
+    "Ashland City, TN",
+    "Fairview, TN",
+    "Union City, TN",
+    "Bruceton, TN"
+  ],
+  "services": [
+    "Garage Door Installation",
+    "Garage Door Repair",
+    "Opener Installation & Repair",
+    "Springs & Cable Replacement",
+    "Preventative Maintenance",
+    "Emergency Same-Day Service"
+  ]
+}

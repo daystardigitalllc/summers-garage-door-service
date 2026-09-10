@@ -1,0 +1,21 @@
+{
+  "primaryColor": "#2ee66b",
+  "primaryColorHover": "#25c85a",
+  "secondaryColor": "#0a0f0a",
+  "accentColor": "#7cf5a4",
+  "borderRadius": "0.5rem",
+  "fontFamily": "Manrope",
+  "style": "oak-city",
+  "navbarStyle": "pill",
+  "footerStyle": "standard",
+  "darkMode": true,
+  "marqueePhrases": [
+    "Garage Door Installation",
+    "Repairs & Openers",
+    "Springs & Cables",
+    "Preventative Maintenance",
+    "24/7 Emergency Service",
+    "Free Estimates",
+    "Middle & West Tennessee"
+  ]
+}

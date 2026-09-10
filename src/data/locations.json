@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "camden",
+    "name": "Camden",
+    "county": "Benton County",
+    "countyIds": ["Benton"],
+    "intro": "Camden is home base for Summers Garage Door Service, right on Kentucky Lake in Benton County. We're usually the fastest crew to reach you here, with same-day repairs and free installation estimates.",
+    "seoTitle": "Garage Door Repair & Installation in Camden, TN | Summers Garage Door Service",
+    "seoDescription": "Summers Garage Door Service is based in Camden, TN, offering garage door installation, repair, openers, and springs to Benton County homeowners."
+  },
+  {
+    "slug": "dickson",
+    "name": "Dickson",
+    "county": "Dickson County",
+    "countyIds": ["Dickson"],
+    "intro": "We service Dickson, Charlotte, Burns, White Bluff, and Bon Aqua regularly, covering all of Dickson County with installs, repairs, and opener service.",
+    "seoTitle": "Garage Door Service in Dickson, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and opener service for Dickson, Charlotte, Burns, White Bluff, and the rest of Dickson County, TN."
+  },
+  {
+    "slug": "waverly",
+    "name": "Waverly",
+    "county": "Humphreys County",
+    "countyIds": ["Humphreys"],
+    "intro": "Waverly and McEwen homeowners count on us for dependable garage door repair and installation across Humphreys County, including 24/7 emergency calls.",
+    "seoTitle": "Garage Door Repair in Waverly, TN | Summers Garage Door Service",
+    "seoDescription": "Summers Garage Door Service covers Waverly, McEwen, and all of Humphreys County, TN with repairs, installs, and emergency service."
+  },
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "county": "Henry County",
+    "countyIds": ["Henry"],
+    "intro": "From the Henry County seat out to the rest of the surrounding communities, we handle garage door installs, spring replacement, and opener repair in Paris, TN.",
+    "seoTitle": "Garage Door Installation & Repair in Paris, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and maintenance for Paris and Henry County, TN, backed by 10+ years of local experience."
+  },
+  {
+    "slug": "clarksville",
+    "name": "Clarksville",
+    "county": "Montgomery County",
+    "countyIds": ["Montgomery"],
+    "intro": "We bring the same licensed, insured garage door service to Clarksville and Montgomery County that's kept us busy across Middle Tennessee for over a decade.",
+    "seoTitle": "Garage Door Service in Clarksville, TN | Summers Garage Door Service",
+    "seoDescription": "Residential and commercial garage door installation and repair for Clarksville and Montgomery County, TN."
+  },
+  {
+    "slug": "nashville",
+    "name": "Nashville",
+    "county": "Davidson County",
+    "countyIds": ["Davidson"],
+    "intro": "Nashville and the rest of Davidson County get the same free estimate, same-day repair approach we're known for closer to home.",
+    "seoTitle": "Garage Door Repair in Nashville, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and opener service for Nashville and Davidson County, TN homeowners."
+  },
+  {
+    "slug": "ashland-city",
+    "name": "Ashland City",
+    "county": "Cheatham County",
+    "countyIds": ["Cheatham"],
+    "intro": "Ashland City and the rest of Cheatham County are a regular part of our route, with the same prompt, professional service every time.",
+    "seoTitle": "Garage Door Installation in Ashland City, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and preventative maintenance for Ashland City and Cheatham County, TN."
+  },
+  {
+    "slug": "fairview",
+    "name": "Fairview",
+    "county": "Williamson County",
+    "countyIds": ["Williamson"],
+    "intro": "Fairview and the western edge of Williamson County trust us for carriage-style installs, opener upgrades, and dependable repairs.",
+    "seoTitle": "Garage Door Installation in Fairview, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation and repair for Fairview and Williamson County, TN, including new opener installs and spring replacement."
+  },
+  {
+    "slug": "union-city",
+    "name": "Union City",
+    "county": "Obion County",
+    "countyIds": ["Obion"],
+    "intro": "Union City and Obion County are part of our West Tennessee coverage area, with free estimates and same-day emergency repairs available.",
+    "seoTitle": "Garage Door Repair in Union City, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and emergency service for Union City and Obion County, TN."
+  },
+  {
+    "slug": "bruceton",
+    "name": "Bruceton",
+    "county": "Carroll County",
+    "countyIds": ["Carroll"],
+    "intro": "Bruceton, Huntington, and the rest of Carroll County get the same careful installs and honest repair pricing we're known for.",
+    "seoTitle": "Garage Door Service in Bruceton, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation and repair for Bruceton, Huntington, and Carroll County, TN."
+  }
+]

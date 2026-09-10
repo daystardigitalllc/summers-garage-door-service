@@ -1,0 +1,241 @@
+{
+  "layout": [
+    "HeroContractor",
+    "Marquee",
+    "TrustBar",
+    "ServicesBento",
+    "StatCounters",
+    "Gallery",
+    "ReviewsMarquee",
+    "ServiceAreaMap",
+    "FAQNumbered",
+    "CTA"
+  ],
+  "navbarPill": {
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "Services", "href": "/#services" },
+      { "label": "Gallery", "href": "/#portfolio" },
+      { "label": "Reviews", "href": "/#reviews" },
+      { "label": "Service Area", "href": "/#service-area-map" },
+      { "label": "FAQ", "href": "/#faq" }
+    ]
+  },
+  "footerBigText": {
+    "tagline": "Family-owned garage door service for Middle & West Tennessee, since day one."
+  },
+  "home": {
+    "heroContractor": {
+      "badge": "Family Owned · 10+ Years Local",
+      "title": "Garage Door Repair & Installation in Middle & West Tennessee",
+      "subtitle": "From a stuck opener to a full door replacement, Summers Garage Door Service keeps your home's biggest moving part running quiet, safe, and on schedule. Free estimates, same-day calls, no pressure.",
+      "bgImage": "/images/dark-barn-doors.jpg",
+      "bullets": [
+        "Family Owned & Operated Since Day One",
+        "Licensed, Insured & Background-Checked Crew",
+        "24/7 Emergency Service Available"
+      ]
+    },
+    "servicesBento": {
+      "badge": "What We Do",
+      "heading": "Garage Door Work,",
+      "headingAccent": "Done Right the First Time",
+      "items": [
+        {
+          "src": "/images/dark-barn-doors.jpg",
+          "alt": "Dark carriage-style garage doors on a white barn-style home",
+          "title": "New Door Installation",
+          "description": "Full replacement with the brand, style, and insulation package that fits your home.",
+          "href": "/services/garage-door-installation"
+        },
+        {
+          "src": "/images/carriage-door-install.jpg",
+          "alt": "White carriage-style garage doors freshly installed on a three-car garage",
+          "title": "Carriage-Style Upgrades",
+          "description": "Swap dated flat panels for a carriage-style look that changes the whole front of the house.",
+          "href": "/services/garage-door-installation"
+        },
+        {
+          "src": "/images/opener-spring-repair.jpg",
+          "alt": "Garage door opener, torsion spring, and track installed in a garage ceiling",
+          "title": "Openers, Springs & Cables",
+          "description": "Broken spring, dead opener, or a door that won't stay on track - we diagnose and fix it same day.",
+          "href": "/services/garage-door-repair"
+        },
+        {
+          "src": "/images/black-trim-carriage-doors.jpg",
+          "alt": "Three white carriage-style garage doors with black trim",
+          "title": "Preventative Maintenance",
+          "description": "A yearly tune-up catches worn rollers and loose hardware before they turn into a Saturday emergency.",
+          "href": "/services/preventative-maintenance"
+        },
+        {
+          "src": "/images/carriage-door-install.jpg",
+          "alt": "Newly installed residential garage doors",
+          "title": "Residential & Commercial",
+          "description": "Homes, farms, shops, and commercial bays - sized and built for what your property actually needs.",
+          "href": "/services/garage-door-installation"
+        },
+        {
+          "src": "/images/opener-spring-repair.jpg",
+          "alt": "Garage door opener installed and wired in a residential garage",
+          "title": "Emergency & Same-Day Service",
+          "description": "A door stuck open or shut isn't a job that can wait. Call us and we'll work you in.",
+          "href": "/services/garage-door-repair"
+        }
+      ]
+    },
+    "statCounters": {
+      "badge": "",
+      "heading": "Why Middle & West Tennessee Calls Summers",
+      "variant": "dark",
+      "items": [
+        { "value": 10, "suffix": "+", "label": "Years in Business" },
+        { "value": 10, "suffix": "", "label": "TN Counties Served" },
+        { "value": 5, "decimals": 1, "suffix": "", "label": "Average Rating" },
+        { "value": 24, "suffix": "/7", "label": "Emergency Availability" }
+      ]
+    },
+    "reviewsMarquee": {
+      "badge": "What Neighbors Say",
+      "heading": "Real Reviews From Real Homeowners"
+    },
+    "faqNumbered": {
+      "badge": "Got Questions?",
+      "heading": "Let's Clear It Up",
+      "subtitle": "Straight answers to what homeowners ask us most before calling."
+    },
+    "serviceAreaMap": {
+      "badge": "Service Area",
+      "heading": "Proudly Serving",
+      "headingAccent": "Middle & West Tennessee",
+      "subtitle": "Based in Camden, TN, and on the road across 10 counties - Cheatham, Dickson, Benton, Obion, Davidson, Montgomery, Humphreys, Williamson, Henry, and Carroll.",
+      "hubSlug": "camden"
+    }
+  },
+  "services": [
+    {
+      "slug": "garage-door-installation",
+      "title": "Garage Door Installation",
+      "image": "/images/dark-barn-doors.jpg",
+      "shortDescription": "Full garage door replacement, from carriage-style upgrades to insulated steel, installed and adjusted right the first time.",
+      "longDescription": "A new garage door is one of the fastest ways to change the whole look of a house, but only if it's installed correctly. We handle the full job: pulling the old door, setting new tracks and hardware, balancing springs to the new door's weight, and programming the opener, so everything works together instead of fighting each other from day one.",
+      "features": [
+        "Carriage-style, flush panel & insulated steel options",
+        "New tracks, hinges & hardware included",
+        "Spring balance matched to the new door",
+        "Opener install or reprogram included"
+      ],
+      "signals": [
+        "A door that's dented, warped, or won't seal at the bottom",
+        "Wanting a style upgrade to match a renovated exterior",
+        "A door that's louder or heavier to lift than it used to be",
+        "Panels that are cracked or delaminating"
+      ],
+      "process": [
+        "Free on-site estimate - we measure the opening and talk through door styles and budget",
+        "We order the door and schedule a install date that works for you",
+        "Old door removed, new tracks and hardware set, door hung and balanced",
+        "Opener installed or reprogrammed, and the whole system tested before we leave"
+      ],
+      "faq": [
+        { "q": "How long does a new garage door take to install?", "a": "Most single-door installs take about half a day once the door itself is on site. We'll give you a firm window when we schedule." },
+        { "q": "Can you match my existing opener to a new door?", "a": "Usually, yes. If your opener is older or underpowered for a heavier insulated door, we'll let you know before the install, not after." },
+        { "q": "Do you install commercial garage doors too?", "a": "Yes, we install and service both residential and commercial doors across Middle and West Tennessee." }
+      ]
+    },
+    {
+      "slug": "garage-door-repair",
+      "title": "Garage Door Repair",
+      "image": "/images/opener-spring-repair.jpg",
+      "shortDescription": "Openers, springs, cables, rollers, and tracks - diagnosed and fixed, usually the same day you call.",
+      "longDescription": "Most garage door problems come down to a handful of parts: a broken spring, a worn cable, a dead opener, or a track that's out of alignment. We diagnose the actual cause instead of guessing, so you're not paying to replace parts that were never the problem in the first place.",
+      "features": [
+        "Torsion & extension spring replacement",
+        "Opener repair, replacement & reprogramming",
+        "Cable, roller & track repair",
+        "Same-day and emergency calls"
+      ],
+      "signals": [
+        "The door won't open or close all the way",
+        "Loud banging, grinding, or scraping when it moves",
+        "The opener runs but the door doesn't move",
+        "A visibly bent track or a door hanging crooked"
+      ],
+      "process": [
+        "Call us and describe what's happening - we can often narrow it down before we arrive",
+        "On-site diagnosis of the spring, cables, opener, and tracks",
+        "Straight pricing before any work starts, no surprise add-ons",
+        "Repair completed and the door cycle-tested before we leave"
+      ],
+      "faq": [
+        { "q": "Is a broken spring dangerous to leave alone?", "a": "A broken spring puts a lot of extra strain on the opener and cables, and can lead to the door slamming down. We treat it as a priority call." },
+        { "q": "Do you carry parts on the truck?", "a": "Yes, common springs, cables, rollers, and opener parts are stocked on the truck, so most repairs are done in one visit." },
+        { "q": "How fast can you get to an emergency call?", "a": "We offer 24/7 emergency service and do our best to get to you the same day, especially if the door is stuck open." }
+      ]
+    },
+    {
+      "slug": "preventative-maintenance",
+      "title": "Preventative Maintenance",
+      "image": "/images/black-trim-carriage-doors.jpg",
+      "shortDescription": "A yearly tune-up that catches worn hardware, loose bolts, and out-of-balance springs before they turn into a breakdown.",
+      "longDescription": "A garage door cycles hundreds of times a year, and the parts that make it move wear out gradually. Preventative maintenance catches worn rollers, loose hardware, and out-of-balance springs while they're still a five-minute fix, not a Saturday-night emergency call.",
+      "features": [
+        "Full hardware inspection & tightening",
+        "Spring balance & cable check",
+        "Roller, hinge & track lubrication",
+        "Opener safety sensor test"
+      ],
+      "signals": [
+        "It's been over a year since the door was serviced",
+        "The door has started running rougher or louder over time",
+        "You're prepping the house to sell",
+        "Heading into fall or winter and want it ready for the cold"
+      ],
+      "process": [
+        "Full inspection of springs, cables, rollers, tracks & hardware",
+        "Everything tightened, lubricated, and adjusted back to spec",
+        "Opener force and safety sensors tested",
+        "A quick rundown of anything worth keeping an eye on"
+      ],
+      "faq": [
+        { "q": "How often should a garage door be serviced?", "a": "Once a year is a good rule of thumb for most homeowners, especially heading into the temperature swings of fall and winter." },
+        { "q": "Will maintenance make my door quieter?", "a": "Often, yes. A lot of the noise homeowners live with is just worn rollers or loose hardware, and both get addressed during a tune-up." }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Susie Hall Pratt",
+      "location": "TN",
+      "rating": 5,
+      "text": "We just had our really old garage doors replaced by y'all and they look so good! Can't believe how quiet they are. Very professional and friendly service. Will definitely recommend to friends and family! Thank you so much again for the prompt service!"
+    },
+    {
+      "author": "Jamie Wallace",
+      "location": "TN",
+      "rating": 5,
+      "text": "This was one of the best customer service experiences I've had in recent years. I reached out regarding replacing my current garage doors, as well as upgrading the openers. He responded and came by to take a look within 24 hours. He left me with books to choose from and never tried to influence my decision in any way. Extremely good with communication, which seems to be rare these days! The new doors and equipment were installed and I cannot rave enough. I would highly recommend Summers Garage Door Service to ANYONE with this need!"
+    },
+    {
+      "author": "Hannah Weller",
+      "location": "TN",
+      "rating": 5,
+      "text": "Summers Garage Door Service did an amazing job updating our garage door and making our door more functional to fit our needs! We definitely recommend them!"
+    },
+    {
+      "author": "Google Reviewer",
+      "location": "TN",
+      "rating": 5,
+      "text": "Prompt, experienced and very professional. Would highly recommend Chance and his crew for any garage door necessities."
+    }
+  ],
+  "faqs": [
+    { "q": "Are you licensed and insured?", "a": "Yes. Summers Garage Door Service is fully licensed and insured for both residential and commercial work." },
+    { "q": "Do you offer free estimates?", "a": "Yes, every estimate is free with no obligation, whether it's a new install or a repair." },
+    { "q": "Do you offer same-day or emergency service?", "a": "Yes, we offer 24/7 emergency service and do our best to get to same-day calls, especially when a door is stuck open or won't close." },
+    { "q": "What areas do you serve?", "a": "We serve Middle and West Tennessee, including Cheatham, Dickson, Benton, Obion, Davidson, Montgomery, Humphreys, Williamson, Henry, and Carroll Counties. Call to confirm service at your address." },
+    { "q": "Do you repair openers, or only install new ones?", "a": "Both. We repair existing openers when it makes sense, and install and program new ones when a repair isn't worth it." },
+    { "q": "How do I know if I need a new spring or a whole new door?", "a": "A broken spring is usually just a spring. But if the door itself is old, dented, or the panels are failing, we'll tell you honestly whether a repair makes sense or a replacement is the better long-term call." }
+  ]
+}

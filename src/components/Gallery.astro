@@ -1,0 +1,78 @@
+---
+import themeConfig from '../data/theme.config.json';
+
+const portfolioItems = [
+  {
+    image: "/images/dark-barn-doors.jpg",
+    title: "Barn-Style Door Replacement",
+    location: "Dickson County",
+    description: "Full replacement of two dated overhead doors with insulated barn-style panels to match a black-and-white farmhouse exterior."
+  },
+  {
+    image: "/images/carriage-door-install.jpg",
+    title: "Carriage-Style Three-Car Install",
+    location: "Williamson County",
+    description: "Three carriage-style doors with arched window rows, installed on a new-construction three-car garage."
+  },
+  {
+    image: "/images/black-trim-carriage-doors.jpg",
+    title: "Black-Trim Carriage Doors",
+    location: "Henry County",
+    description: "Carriage-hardware doors with decorative hinges, matched to the home's black trim and stone-brick accents."
+  },
+  {
+    image: "/images/opener-spring-repair.jpg",
+    title: "Opener & Spring Replacement",
+    location: "Benton County",
+    description: "New opener, torsion spring, and track hardware installed and balanced on a residential single-car door."
+  }
+];
+---
+
+<section id="portfolio" class="py-24 bg-slate-950 text-white relative border-t border-slate-900/60">
+  {/* Top background glow blobs */}
+  <div class="absolute inset-0 pointer-events-none glow-blob-container" style={themeConfig.style === 'oak-city' ? "display: none;" : ""}>
+    <div class="absolute top-1/4 left-1/3 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[80px]"></div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+      <div class="space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-accent bg-accent/15 px-3.5 py-1.5 rounded-md border border-accent/25">
+          Recent Work
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight uppercase leading-[1.1] max-w-xl">
+          Jobs we have taken on
+        </h2>
+      </div>
+      <a href="#get-quote-form" class="inline-flex items-center justify-center px-6 py-3 border-2 border-white/20 hover:bg-white/10 rounded-custom text-xs font-bold uppercase tracking-widest transition-all hover:scale-102 shrink-0">
+        Get an Estimate
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {portfolioItems.map((item) => (
+        <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900/25 flex flex-col justify-end min-h-[360px] transition-all duration-300 hover:border-primary/40 hover:-translate-y-1">
+          {/* Background Image */}
+          <div class="absolute inset-0 z-0">
+            <img src={item.image} alt={item.title} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-transparent z-10"></div>
+          </div>
+
+          {/* Overlay Content */}
+          <div class="p-6 relative z-20 space-y-3">
+            <span class="inline-block text-[9px] font-extrabold uppercase tracking-widest bg-primary/90 text-neutral-950 px-2.5 py-1 rounded border border-white/15">
+              <i class="fa-solid fa-location-dot text-[8px] mr-1"></i> {item.location}
+            </span>
+            <h3 class="text-xl font-bold leading-tight group-hover:text-primary transition-colors uppercase">
+              {item.title}
+            </h3>
+            <p class="text-xs text-slate-300 font-normal leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

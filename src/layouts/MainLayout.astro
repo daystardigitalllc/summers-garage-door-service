@@ -1,0 +1,148 @@
+---
+import '../styles/global.css';
+import themeConfig from '../data/theme.config.json';
+import businessData from '../data/business.json';
+import contentData from '../data/content.json';
+import Header from '../components/Header.astro';
+import NavbarPill from '../components/NavbarPill.astro';
+import Footer from '../components/Footer.astro';
+import FooterBigText from '../components/FooterBigText.astro';
+import MobileTabBar from '../components/MobileTabBar.astro';
+
+// Render the selected navbar and footer styles. footerStyle is always
+// explicit in this project's theme.config.json, so it's never silently
+// overridden by the oak-city style bundle the way the base template does.
+const navbarStyle = themeConfig.navbarStyle || 'standard';
+const footerStyle = themeConfig.footerStyle || (themeConfig.style === 'oak-city' ? 'big-text' : 'standard');
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title = `${businessData.name} | Garage Door Installation & Repair in ${businessData.address?.city || 'Camden'}, TN`,
+  description = `${businessData.name} has served Middle & West Tennessee for 10+ years with garage door installation, repair, openers, and springs. Licensed, insured, and family owned. Call ${businessData.phone}.`,
+  ogImage = '/images/dark-barn-doors.jpg'
+} = Astro.props;
+
+const fontName = themeConfig.fontFamily || 'Outfit';
+const fontUrl = `https://fonts.googleapis.com/css2?family=${fontName.replace(/ /g, '+')}:wght@300;400;500;600;700;800&display=swap`;
+
+// LocalBusiness schema as a service-area business: real reviews get
+// rolled into an aggregateRating, and every served city is listed.
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": businessData.name,
+  "image": new URL(businessData.logo || "/logo.svg", Astro.url).href,
+  "telephone": businessData.phone,
+  "email": businessData.email,
+  "url": Astro.url.origin,
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": businessData.address?.city || "Camden",
+    "addressRegion": businessData.address?.state || "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": (businessData.locations || []).map((city) => ({
+    "@type": "City",
+    "name": city
+  })),
+  "sameAs": [
+    businessData.socials?.facebook,
+    businessData.socials?.instagram,
+    businessData.socials?.google
+  ].filter(Boolean),
+  ...(contentData.reviews && contentData.reviews.length > 0 ? {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": (
+        contentData.reviews.reduce((sum, r) => sum + (r.rating || 5), 0) / contentData.reviews.length
+      ).toFixed(1),
+      "reviewCount": contentData.reviews.length
+    },
+    "review": contentData.reviews.map((r) => ({
+      "@type": "Review",
+      "author": { "@type": "Person", "name": r.author },
+      "reviewRating": { "@type": "Rating", "ratingValue": r.rating || 5, "bestRating": 5 },
+      "reviewBody": r.text
+    }))
+  } : {})
+};
+---
+
+<!DOCTYPE html>
+<html lang="en" class:list={[{ 'dark': themeConfig.darkMode }]}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, Astro.url)} />
+
+    <!-- Google Fonts Dynamic Load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href={fontUrl} rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+    <!-- Inject visual customizer values as CSS variables -->
+    <style define:vars={{
+      'primary-color': themeConfig.primaryColor,
+      'primary-color-hover': themeConfig.primaryColorHover,
+      'secondary-color': themeConfig.secondaryColor,
+      'accent-color': themeConfig.accentColor,
+      'border-radius': themeConfig.borderRadius,
+      'font-family': `'${fontName}', sans-serif`,
+      'glow-display': (themeConfig.style === 'sharp-contractor' || themeConfig.style === 'oak-city') ? 'none' : 'block'
+    }}></style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 min-h-screen flex flex-col antialiased selection:bg-primary/20 selection:text-primary pb-16 md:pb-0">
+    <!-- Top-level Background Glow (Modern Agency UI Touch) -->
+    <div class="relative overflow-hidden w-full">
+      <div class="glow-blob w-[500px] h-[500px] bg-primary top-[-200px] left-[-200px]"></div>
+      <div class="glow-blob w-[500px] h-[500px] bg-accent top-[400px] right-[-200px]"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    {navbarStyle === 'pill' ? <NavbarPill /> : <Header />}
+
+    <!-- Main Content Area -->
+    <main class="flex-grow z-10">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    {footerStyle === 'big-text' ? <FooterBigText /> : <Footer />}
+
+    <!-- Mobile Sticky Tab Bar (Call / Get Quote) -->
+    <MobileTabBar />
+  </body>
+</html>

@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import businessData from '../data/business.json';
+---
+
+<MainLayout title={`Page Not Found | ${businessData.name}`}>
+  <section class="min-h-[70vh] flex items-center justify-center bg-neutral-950 text-white text-center px-6 py-32">
+    <div class="max-w-lg space-y-6">
+      <span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3.5 py-1.5 rounded-full">
+        404
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight">Page Not Found</h1>
+      <p class="text-neutral-400 text-base leading-relaxed">
+        That page moved or never existed. Head back home, or give us a call - we're happy to help.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <a href="/" class="inline-flex items-center justify-center px-6 py-3 font-bold text-neutral-950 bg-primary hover:bg-primary-hover rounded-custom transition-all">
+          Back to Home
+        </a>
+        <a href={`tel:${businessData.phone}`} class="inline-flex items-center justify-center px-6 py-3 font-bold border border-white/20 hover:bg-white/10 rounded-custom transition-all">
+          Call {businessData.phone}
+        </a>
+      </div>
+    </div>
+  </section>
+</MainLayout>
