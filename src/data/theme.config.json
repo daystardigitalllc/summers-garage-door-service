@@ -1,12 +1,12 @@
 {
-  "primaryColor": "#2ee66b",
-  "primaryColorHover": "#25c85a",
-  "secondaryColor": "#0a0f0a",
-  "accentColor": "#7cf5a4",
+  "primaryColor": "#6CBB3F",
+  "primaryColorHover": "#59A032",
+  "secondaryColor": "#000000",
+  "accentColor": "#8CD65C",
   "borderRadius": "0.5rem",
   "fontFamily": "Manrope",
   "style": "oak-city",
-  "navbarStyle": "pill",
+  "navbarStyle": "standard",
   "footerStyle": "standard",
   "darkMode": true,
   "marqueePhrases": [
