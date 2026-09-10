@@ -6,33 +6,36 @@ import contentData from '../data/content.json';
 // "layout" array) - keeps the page free of the wider template
 // library's unused imports.
 import HeroContractor from '../components/HeroContractor.astro';
+import GarageDoorReveal from '../components/GarageDoorReveal.astro';
 import Marquee from '../components/Marquee.astro';
 import TrustBar from '../components/TrustBar.astro';
 import ServicesBento from '../components/ServicesBento.astro';
 import StatCounters from '../components/StatCounters.astro';
 import Gallery from '../components/Gallery.astro';
-import ReviewsMarquee from '../components/ReviewsMarquee.astro';
 import ServiceAreaMap from '../components/ServiceAreaMap.astro';
 import FAQNumbered from '../components/FAQNumbered.astro';
 import CTA from '../components/CTA.astro';
 
 const ComponentMap: Record<string, any> = {
-  HeroContractor,
   Marquee,
   TrustBar,
   ServicesBento,
   StatCounters,
   Gallery,
-  ReviewsMarquee,
   ServiceAreaMap,
   FAQNumbered,
   CTA,
 };
 
-const layout: string[] = contentData.layout || [];
+// HeroContractor is rendered explicitly below, wrapped in the garage
+// door scroll reveal, so it's excluded from the generic layout loop.
+const layout: string[] = (contentData.layout || []).filter((name) => name !== 'HeroContractor');
 ---
 
 <MainLayout>
+  <GarageDoorReveal>
+    <HeroContractor />
+  </GarageDoorReveal>
   {layout.map((componentName) => {
     const Component = ComponentMap[componentName];
     if (!Component) {

@@ -6,7 +6,6 @@
     "ServicesBento",
     "StatCounters",
     "Gallery",
-    "ReviewsMarquee",
     "ServiceAreaMap",
     "FAQNumbered",
     "CTA"
@@ -16,7 +15,7 @@
       { "label": "Home", "href": "/" },
       { "label": "Services", "href": "/#services" },
       { "label": "Gallery", "href": "/#portfolio" },
-      { "label": "Reviews", "href": "/#reviews" },
+      { "label": "Testimonials", "href": "/testimonials" },
       { "label": "Service Area", "href": "/#service-area-map" },
       { "label": "FAQ", "href": "/#faq" }
     ]
@@ -206,28 +205,86 @@
   ],
   "reviews": [
     {
+      "author": "Ken Forrester",
+      "location": "TN",
+      "rating": 5,
+      "date": "8 months ago",
+      "text": "I highly recommend Summers Garage Door Service. From ordering to installation they were polite and easy to work with. Thanks guys for a great job!"
+    },
+    {
+      "author": "William Vaughan",
+      "location": "TN",
+      "rating": 5,
+      "date": "2 years ago",
+      "text": "They did an amazing job in installing my garage doors and the service was fast. Everyone was professional and knowledgeable about everything they did. Would definitely recommend them for all of your garage door needs."
+    },
+    {
+      "author": "Rosemary Chamberlain",
+      "location": "TN",
+      "rating": 5,
+      "date": "9 months ago",
+      "text": "Accidently backed into the garage door before it opened. Looking at the damage, we thought it would take an enormous amount of work and time and perhaps even have to be replaced. Called Chance and he came out the same day, arriving when he said he would. He and his assistant had it repaired in just a short time. We can barely even tell the garage door was damaged and it works great! We highly recommend him!"
+    },
+    {
+      "author": "Misty Nesbitt",
+      "location": "TN",
+      "rating": 5,
+      "date": "3 years ago",
+      "text": "Excellent service, reasonable price and the quality of the door is above what you can expect from a big box store. Had the door ordered and installed in less than 2 weeks for a custom door."
+    },
+    {
+      "author": "Sandi Waggoner",
+      "location": "TN",
+      "rating": 5,
+      "date": "1 year ago",
+      "text": "We purchased a home that had a small garage door. It was a manual open & close door. I saw on a friend's Facebook page where Chance Summers had installed 2 garage doors for them. After reading all the positive reviews, I called Chance at Summers Garage Door Service. He & Luke came to the house & told us what the cost would be. They were so nice & put no pressure on you at all! We are so pleased with their work! If you need anything taken care of with your garage doors, don't hesitate to call Chance Summers!"
+    },
+    {
+      "author": "Jamie Wallace",
+      "location": "TN",
+      "rating": 5,
+      "date": "2 years ago",
+      "text": "This was one of the best customer service experiences I've had in recent years. I reached out regarding replacing my current garage doors, as well as upgrading the openers. He responded and came by to take a look within 24 hours. He left me with books to choose from and never tried to influence my decision in any way. Extremely good with communication, which seems to be rare these days! The new doors and equipment were installed and I cannot rave enough. I would highly recommend Summers Garage Door Service to ANYONE with this need!"
+    },
+    {
+      "author": "Ivy Corner Gift & Flower Shoppe",
+      "location": "TN",
+      "rating": 5,
+      "date": "1 year ago",
+      "text": "We just had our really old garage doors replaced by Summers Garage Door Service and they look so good! Can't believe how quiet they are. Very professional and friendly service. Will definitely recommend to friends and family and anyone looking for new or replacement service. You guys are great! Thank you again!"
+    },
+    {
+      "author": "Laura Turner",
+      "location": "TN",
+      "rating": 5,
+      "date": "2 years ago",
+      "text": "I cannot make enough excellent remarks about the installation of our new garage doors. Chance and crew are professional but also exceeding nice young men. They took off our very old doors and expertly installed new ones that are a smooth as silk and the windows are wonderful as well as the insulation on the doors. We are ready to face winter with a warm garage. Very grateful to them. I'd give them 10 stars if I could."
+    },
+    {
+      "author": "Do Re",
+      "location": "TN",
+      "rating": 5,
+      "date": "3 years ago",
+      "text": "Great experience with Summers Garage Door Service. We had them replace the original garage doors and install automatic garage door openers with outside keypad. They were quick to respond when we called to inquire about their services, and they were quick to perform the job. Chance was very professional and respectful. We felt he was very honest. He did not try to upsell us on fancy, more expensive doors and only sold us what we really needed. If only all contractors were as genuine and professional as Summers Garage Door Service, home improvements would be so much easier."
+    },
+    {
+      "author": "Saul Beard",
+      "location": "TN",
+      "rating": 5,
+      "date": "3 years ago",
+      "text": "The guys with Summers Garage Door did an excellent job. Communication was excellent and they came the next day to replace my broken spring. I would highly recommended! The door works better than the day it was installed. Thank you Chance, Luke and Jaxson!"
+    },
+    {
       "author": "Susie Hall Pratt",
       "location": "TN",
       "rating": 5,
       "text": "We just had our really old garage doors replaced by y'all and they look so good! Can't believe how quiet they are. Very professional and friendly service. Will definitely recommend to friends and family! Thank you so much again for the prompt service!"
     },
     {
-      "author": "Jamie Wallace",
-      "location": "TN",
-      "rating": 5,
-      "text": "This was one of the best customer service experiences I've had in recent years. I reached out regarding replacing my current garage doors, as well as upgrading the openers. He responded and came by to take a look within 24 hours. He left me with books to choose from and never tried to influence my decision in any way. Extremely good with communication, which seems to be rare these days! The new doors and equipment were installed and I cannot rave enough. I would highly recommend Summers Garage Door Service to ANYONE with this need!"
-    },
-    {
       "author": "Hannah Weller",
       "location": "TN",
       "rating": 5,
       "text": "Summers Garage Door Service did an amazing job updating our garage door and making our door more functional to fit our needs! We definitely recommend them!"
-    },
-    {
-      "author": "Google Reviewer",
-      "location": "TN",
-      "rating": 5,
-      "text": "Prompt, experienced and very professional. Would highly recommend Chance and his crew for any garage door necessities."
     }
   ],
   "faqs": [
