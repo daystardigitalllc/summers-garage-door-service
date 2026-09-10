@@ -54,4 +54,21 @@ import QuickQuoteBar from './QuickQuoteBar.astro';
   dialog?.addEventListener('click', (event) => {
     if (event.target === dialog) dialog.close();
   });
+
+  // The desktop hero has an inline "Get a Free Estimate" form; on
+  // mobile that form is hidden (it was overflowing the hero's scroll
+  // reveal box and getting covered by the sections below it), so any
+  // link pointing at it - the hero's own CTA, header, footer, CTA
+  // banners, FAQ, etc. - opens this same popup instead, from wherever
+  // the visitor already is, rather than jumping to a hidden anchor.
+  const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+
+  document.addEventListener('click', (event) => {
+    if (!isMobile()) return;
+    const target = event.target as HTMLElement | null;
+    const link = target?.closest('a[href*="get-quote-form"]');
+    if (!link) return;
+    event.preventDefault();
+    dialog?.showModal();
+  });
 </script>

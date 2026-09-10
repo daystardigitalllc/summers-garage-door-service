@@ -134,11 +134,19 @@
     // land past it instead of dropping the visitor behind a closed door.
     function openForHash() {
       if (window.location.hash !== '#get-quote-form') return;
+      // On mobile the form itself is hidden (it's a popup off the
+      // bottom tab bar instead - see MobileTabBar.astro), so there's
+      // nothing to scroll to; just open the door so the hero is visible.
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+      const formVisible = !isMobile;
       const openDistance = window.innerHeight * (OPEN_VH / 100);
       window.scrollTo(0, wrap.offsetTop + openDistance + 1);
       door.style.transform = 'translateY(-100%)';
       if (hint) hint.style.opacity = '0';
       setHeaderVisible(true);
+      if (!formVisible) {
+        document.getElementById('mobile-quote-trigger')?.dispatchEvent(new Event('click'));
+      }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });

@@ -101,8 +101,12 @@ const bullets = data?.bullets || defaultBullets;
       </div>
     </div>
 
-    <!-- Right Column: Lead Form Card -->
-    <div id="get-quote-form" class="lg:col-span-5 bg-white text-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-200/50 space-y-6 select-none scroll-mt-28">
+    <!-- Right Column: Lead Form Card - desktop only. On mobile the hero
+    is a fixed-height scroll reveal box, and this card was tall enough
+    to overflow it and get visually covered by the sections below;
+    mobile visitors get the same form as a popup from the bottom tab
+    bar instead (see MobileTabBar.astro). -->
+    <div id="get-quote-form" class="hidden md:block lg:col-span-5 bg-white text-neutral-900 p-8 rounded-xl shadow-2xl border border-neutral-200/50 space-y-6 select-none scroll-mt-28">
       <div class="text-center space-y-1">
         <h3 class="text-lg font-black tracking-wider text-neutral-900 uppercase">{formTitle}</h3>
         <p class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Takes under 60 seconds</p>
