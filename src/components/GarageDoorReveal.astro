@@ -78,13 +78,29 @@
     const wrap = document.getElementById('garage-reveal-wrap');
     const door = document.getElementById('garage-reveal-door');
     const hint = document.getElementById('garage-reveal-hint');
+    const header = document.getElementById('site-header');
     if (!wrap || !door) return;
+
+    if (header) {
+      header.style.transition = 'opacity 400ms ease';
+    }
+
+    function setHeaderVisible(visible: boolean) {
+      if (!header) return;
+      header.style.opacity = visible ? '1' : '0';
+      header.style.pointerEvents = visible ? '' : 'none';
+    }
 
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReduced) {
       door.style.display = 'none';
+      setHeaderVisible(true);
       return;
     }
+
+    // Nav stays hidden until the door has fully raised, so it doesn't
+    // float on top of the closed door before there's a page to navigate.
+    setHeaderVisible(false);
 
     // Scroll distance (as a fraction of one viewport height) needed to
     // fully raise the door. The wrapper is taller than this so the
@@ -102,6 +118,7 @@
       const progress = Math.min(Math.max(scrolled / openDistance, 0), 1);
       door.style.transform = `translateY(${-progress * 100}%)`;
       if (hint) hint.style.opacity = String(Math.max(1 - progress * 6, 0));
+      setHeaderVisible(progress >= 1);
     }
 
     function onScroll() {
@@ -121,6 +138,7 @@
       window.scrollTo(0, wrap.offsetTop + openDistance + 1);
       door.style.transform = 'translateY(-100%)';
       if (hint) hint.style.opacity = '0';
+      setHeaderVisible(true);
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
