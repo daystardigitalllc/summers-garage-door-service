@@ -5,9 +5,9 @@ import locationsData from '../data/locations.json';
 ---
 
 <footer class="bg-neutral-900 text-neutral-400 pt-20 pb-10 border-t border-neutral-800 relative z-10">
-  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16">
+  <div class="container mx-auto px-6 flex flex-col gap-16 pb-16">
     <!-- Brand column -->
-    <div class="lg:col-span-4 space-y-6">
+    <div class="space-y-6">
       <a href="/" class="flex items-center gap-2 group text-white">
         {businessData.logo && businessData.logo !== '/logo.svg' && businessData.logo !== '' ? (
           <img src={businessData.logo} alt={`${businessData.name} Logo`} class="h-12 w-auto object-contain" />
@@ -40,7 +40,7 @@ import locationsData from '../data/locations.json';
     </div>
 
     <!-- Services list -->
-    <div class="lg:col-span-2.5 space-y-4">
+    <div class="space-y-4">
       <h4 class="font-bold text-white text-sm uppercase tracking-wider">Services</h4>
       <ul class="space-y-2 text-sm">
         {contentData.services.map((service) => (
@@ -52,9 +52,9 @@ import locationsData from '../data/locations.json';
     </div>
 
     <!-- Locations list -->
-    <div class="lg:col-span-2.5 space-y-4">
+    <div class="space-y-4">
       <h4 class="font-bold text-white text-sm uppercase tracking-wider">Locations</h4>
-      <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-2 text-sm">
         {locationsData.map((loc) => (
           <li>
             <a href={`/locations/${loc.slug}`} class="hover:text-white transition-colors">{loc.name}</a>
@@ -64,7 +64,7 @@ import locationsData from '../data/locations.json';
     </div>
 
     <!-- Contact details -->
-    <div class="lg:col-span-3 space-y-4">
+    <div class="space-y-4">
       <h4 class="font-bold text-white text-sm uppercase tracking-wider">Contact Info</h4>
       <ul class="space-y-3 text-sm">
         <li class="flex items-start gap-2.5">
