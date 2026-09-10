@@ -13,18 +13,63 @@
     "name": "Dickson",
     "county": "Dickson County",
     "countyIds": ["Dickson"],
-    "intro": "We service Dickson, Charlotte, Burns, White Bluff, and Bon Aqua regularly, covering all of Dickson County with installs, repairs, and opener service.",
+    "intro": "Dickson is the county seat and one of our most-visited stops, with a steady mix of new installs, opener upgrades, and repair calls across town.",
     "seoTitle": "Garage Door Service in Dickson, TN | Summers Garage Door Service",
-    "seoDescription": "Garage door installation, repair, and opener service for Dickson, Charlotte, Burns, White Bluff, and the rest of Dickson County, TN."
+    "seoDescription": "Garage door installation, repair, and opener service for Dickson, TN and the rest of Dickson County."
+  },
+  {
+    "slug": "charlotte",
+    "name": "Charlotte",
+    "county": "Dickson County",
+    "countyIds": ["Dickson"],
+    "intro": "Charlotte's historic square and surrounding farmland see everything from older manual doors that need modernizing to full carriage-style replacements.",
+    "seoTitle": "Garage Door Installation & Repair in Charlotte, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and preventative maintenance for Charlotte, TN and Dickson County."
+  },
+  {
+    "slug": "burns",
+    "name": "Burns",
+    "county": "Dickson County",
+    "countyIds": ["Dickson"],
+    "intro": "Burns homeowners call us for the same free-estimate, no-pressure approach we bring across the rest of Dickson County.",
+    "seoTitle": "Garage Door Repair in Burns, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation and repair for Burns, TN and the surrounding Dickson County area."
+  },
+  {
+    "slug": "white-bluff",
+    "name": "White Bluff",
+    "county": "Dickson County",
+    "countyIds": ["Dickson"],
+    "intro": "From new-construction installs to opener repairs on older homes, White Bluff is a regular stop on our Dickson County route.",
+    "seoTitle": "Garage Door Service in White Bluff, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and opener service for White Bluff, TN and Dickson County."
+  },
+  {
+    "slug": "bon-aqua",
+    "name": "Bon Aqua",
+    "county": "Dickson County",
+    "countyIds": ["Dickson"],
+    "intro": "Bon Aqua's spread-out properties don't slow us down - we bring the same same-day repair and free estimate service out this way.",
+    "seoTitle": "Garage Door Repair in Bon Aqua, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation and repair for Bon Aqua, TN and the surrounding Dickson County area."
   },
   {
     "slug": "waverly",
     "name": "Waverly",
     "county": "Humphreys County",
     "countyIds": ["Humphreys"],
-    "intro": "Waverly and McEwen homeowners count on us for dependable garage door repair and installation across Humphreys County, including 24/7 emergency calls.",
+    "intro": "Waverly homeowners count on us for dependable garage door repair and installation across Humphreys County, including 24/7 emergency calls.",
     "seoTitle": "Garage Door Repair in Waverly, TN | Summers Garage Door Service",
-    "seoDescription": "Summers Garage Door Service covers Waverly, McEwen, and all of Humphreys County, TN with repairs, installs, and emergency service."
+    "seoDescription": "Summers Garage Door Service covers Waverly, TN and all of Humphreys County with repairs, installs, and emergency service."
+  },
+  {
+    "slug": "mcewen",
+    "name": "McEwen",
+    "county": "Humphreys County",
+    "countyIds": ["Humphreys"],
+    "intro": "McEwen is a short drive from our Camden base, so same-day repairs and free installation estimates are the norm here.",
+    "seoTitle": "Garage Door Installation & Repair in McEwen, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation, repair, and opener service for McEwen, TN and Humphreys County."
   },
   {
     "slug": "paris",
@@ -85,8 +130,17 @@
     "name": "Bruceton",
     "county": "Carroll County",
     "countyIds": ["Carroll"],
-    "intro": "Bruceton, Huntington, and the rest of Carroll County get the same careful installs and honest repair pricing we're known for.",
+    "intro": "Bruceton and the rest of Carroll County get the same careful installs and honest repair pricing we're known for.",
     "seoTitle": "Garage Door Service in Bruceton, TN | Summers Garage Door Service",
-    "seoDescription": "Garage door installation and repair for Bruceton, Huntington, and Carroll County, TN."
+    "seoDescription": "Garage door installation and repair for Bruceton, TN and Carroll County."
+  },
+  {
+    "slug": "huntington",
+    "name": "Huntington",
+    "county": "Carroll County",
+    "countyIds": ["Carroll"],
+    "intro": "Huntington homeowners get the same free-estimate, no-pressure approach we bring across the rest of Carroll County.",
+    "seoTitle": "Garage Door Repair in Huntington, TN | Summers Garage Door Service",
+    "seoDescription": "Garage door installation and repair for Huntington, TN and Carroll County."
   }
 ]
